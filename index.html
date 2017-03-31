@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:HomePage="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -13,24 +13,42 @@
 <header>
     <div class="contenitore">
         <div id="logo"></div>
-        <h1> Progetto di Saw! Quello serio </h1>
+        <div id="titolo">
+            <h1> <span class="highlight">HomePage:</span> Progetto di Saw </h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 <section id="map">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="more.html">More</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h1>Prova</h1>
-        <p>Provaaa</p>
+    <div class="contenitore">
+        <script>
+        function initMap() {
+            var uluru = {lat: 44.403157, lng: 8.972023};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAScSWCI8cXmVM8Vyoy9veNNdj0WJYIe_I
+&callback=initMap">
+        </script>
+        <!--Script delle api di googlemaps-->
     </div>
 </section>
 <section id="newsletter">
-    <div class="container">
+    <div class="contenitore">
         <h1>Iscriviti</h1>
         <form>
             <input type="email" placeholder="Inserisci la tua mail">
@@ -39,7 +57,7 @@
     </div>
 </section>
 <section id="scatole">
-    <div class="container">
+    <div class="contenitore">
 
         <div class="box">
 
