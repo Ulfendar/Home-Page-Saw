@@ -1,0 +1,18 @@
+body{
+
+    font: 15px / 1.5 Arial, Helvetica, san-serif;
+    /*Formato compattato per indicare : dimensione font, spazio interlinea, fontfamily e eventuali secondari*/
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    /*Mai sfondo bianco =P, mai*/
+}
+
+.container{
+
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    /**se qualcosa dovesse uscire da un div, mi nasconde la scrollbar, fondamentale per la responsiveness/
+     */
+}
