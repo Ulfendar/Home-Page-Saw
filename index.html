@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:HomePage="http://www.w3.org/1999/xhtml">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -14,7 +14,8 @@
     <div class="contenitore">
         <div id="logo"></div>
         <div id="titolo">
-            <h1> <span class="highlight">HomePage:</span> Progetto di Saw </h1>
+            <h1><span class="highlight">Progetto:</span> HomePage</h1>
+            <!--Utilizzo span al posto di div, per evitare di andare a capo-->
         </div>
         <nav>
             <ul>
@@ -28,18 +29,18 @@
 <section id="map">
     <div class="contenitore">
         <script>
-        function initMap() {
-            var uluru = {lat: 44.403157, lng: 8.972023};
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 16,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
+            function initMap() {
+                var uluru = {lat: 44.403157, lng: 8.972023};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAScSWCI8cXmVM8Vyoy9veNNdj0WJYIe_I
 &callback=initMap">
@@ -47,11 +48,11 @@
         <!--Script delle api di googlemaps-->
     </div>
 </section>
-<section id="newsletter">
+<section id="social">
     <div class="contenitore">
-        <h1>Iscriviti</h1>
+        <h1>Seguici</h1>
         <form>
-            <input type="email" placeholder="Inserisci la tua mail">
+            <input type="email" placeholder="Inserisci la tua mail per ">
             <button type="submit" class="botton-1">Invia</button>
         </form>
     </div>
@@ -61,17 +62,27 @@
 
         <div class="box">
 
-            <h3> Titolo 1</h3>
+            <div class="img"></div>
+            <h3> Informazioni</h3>
+
+            <p> Qui ci andrà qualcosa probabilmente, qualcosa di utile a cui non ho ancora pensato, magari anche qualche
+                immagine!</p>
         </div>
 
         <div class="box">
 
-            <h3> Titolo 2</h3>
+            <div class="img"></div>
+            <h3> Altre informazioni</h3>
+
+            <p>Pure qui ci inseriremo qualcosa di utile o che faccia un po' di scena, cosí sembra un po' povero! </p>
 
         </div>
 
         <div class="box">
-            <h3> Titolo 3</h3>
+            <div class="img"></div>
+            <h3> Altre informazioni ancora</h3>
+
+            <p>Chissà se in questo spazio avremo ancora qualcosa da dire, per ora sicuramente no!</p>
         </div>
 
     </div>

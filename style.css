@@ -1,41 +1,56 @@
 /*Stili globale*/
-body{
+body {
 
     font: 15px / 1.5 Arial, Helvetica, san-serif;
     /* Formato compattato per indicare : dimensione font, spazio interlinea, fontfamily e eventuali secondari */
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: white;
     /*Mai sfondo bianco =P, mai*/
 }
-.contenitore{
+
+.contenitore {
 
     width: 80%;
     margin: auto;
     overflow: hidden;
     /* se qualcosa dovesse uscire da un div, mi nasconde la scrollbar, fondamentale per la responsiveness */
 }
-ul{
+
+ul {
 
     padding: 0;
     margin: 0;
+    float: left;
+    display: inline;
+}
+
+.botton-1 {
+
+    height: 38px;
+    background-color: #015249;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
 }
 
 /*stili header*/
 
-header{
-    background: #35424a;
+header {
+
+    background: #57bc90;
     /*colore bg*/
     color: white;
     /*colore font*/
     padding-top: 30px;
     min-height: 70px;
     /*affinchè scali, ma non venga ridotto troppo*/
-    border-bottom: #e8491d 3px solid ;
+    border-bottom: #015249 3px solid;
     /* short format per indicare il colore e le dimensioni del bordo: colore, dimensioni, tipo */
 }
 
-header a{
+header a {
 
     color: white;
     text-decoration: none;
@@ -51,36 +66,90 @@ header li {
     padding: 0 20px 0 20px;
     /*in senso orario da sopra*/
 }
-header #titolo{
+
+header #titolo {
 
     float: left;
 }
 
-header #titolo h1{
+header #titolo h1 {
 
     margin: 0;
 }
 
-header nav{
+header nav {
 
     float: right;
     margin-top: 10px;
 }
 
-header .highlight, header .current a{
+header .highlight, header .current a {
 
-    color: #e8491d;
+    color: #015249;
     font-weight: bold;
 
 }
 
-header a:hover{
+header a:hover {
 
     font-weight: bold;
     color: gray;
 }
 
-#map{
+/*Mappa*/
+
+#map {
 
     min-height: 400px;
+    text-align: center;
 }
+
+/*Social*/
+#social {
+
+    border-top: #015249 3px solid;
+    padding: 15px;
+    color: white;
+    background-color: #57bc90;
+}
+
+#social h1 {
+
+    float: left;
+}
+
+#social form {
+
+    float: right;
+    margin-top: 15px;
+}
+
+#social input[type="email"] {
+
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*Scatole*/
+
+#scatole .box {
+
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/*Footer*/
+
+footer {
+
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #015249;
+    text-align: center;
+}
+
