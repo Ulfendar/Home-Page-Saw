@@ -9,42 +9,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
     <div class="contenitore">
         <div id="logo"></div>
         <div id="titolo">
-            <h1><span  class="highlight"> <a href="index.html"> Progetto: HomePage </a></span></h1>
+            <a href="index.html"><h1><span class="highlight">Progetto:</span> HomePage</h1></a>
             <!--Utilizzo span al posto di div, per evitare di andare a capo-->
         </div>
-
         <nav>
             <ul>
-                <li class="current"><a href="signup.html">Sign-up </a></li>
-                <li class="current">|</li>
-                <li class="current"><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="current"><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <section id="map">
     <div class="contenitore">
-        <form>
-            <p><h1> REGISTRATION</h1>
-            Nome <input type="text" value="">
-            Cognome <input type="text" value="">
-            </p>
-            <p>Email
-                <input type="email" value="">
-                Password
-                <input type="password">
-            </p>
-            <p>Retype Password</p>
-            <input type="password"></br></br>
-            <button type="submit" class="botton-1">Login</button>
-        </form>
-
-        <!--Script delle api di googlemaps-->
+        <div class="form">
+            <h2>Registrati</h2>
+            <form>
+                <label>Nome Utente:</label><input title="Username" type="text">
+                <label>E-mail:</label><input title="Email" type = "email">
+                <label>Password:</label><input title="Password" type = "text">
+                <label>Data di Nascita:</label><input title="Birthdate" type = "text">
+                <label>Nazionalità</label><input title="Nazione" type = "text">
+                <label>Comune:</label><input title="Città" type = "text">
+            </form>
+        </div>
     </div>
 </section>
 <section id="social">
