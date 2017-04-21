@@ -1,6 +1,5 @@
 /*Stili globale*/
 body {
-
     font: 15px / 1.5 Arial, Helvetica, san-serif;
     /* Formato compattato per indicare : dimensione font, spazio interlinea, fontfamily e eventuali secondari */
     padding: 0;
@@ -9,32 +8,14 @@ body {
     /*Mai sfondo bianco =P, mai*/
 }
 
-.contenitore {
-
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    /*text-align: center;*/
-    /* se qualcosa dovesse uscire da un div, mi nasconde la scrollbar, fondamentale per la responsiveness */
-}
 
 ul {
-
     padding: 0;
     margin: 0;
     float: left;
     display: inline;
 }
 
-.botton-1 {
-
-    height: 38px;
-    background-color: #015249;
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-}
 
 /*stili header*/
 
@@ -55,15 +36,11 @@ header a {
 
     color: white;
     text-decoration: none;
-
-
-}
-
-nav a{
-
     text-transform: uppercase;
     font-size: 16px;
 }
+
+
 
 header li {
 
@@ -72,6 +49,7 @@ header li {
     padding: 0 20px 0 20px;
     /*in senso orario da sopra*/
 }
+
 
 header #titolo {
 
@@ -102,45 +80,61 @@ header a:hover {
     color: gray;
 }
 
-/*Mappa*/
+/*Footer*/
 
-#map {
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #015249;
+    text-align: center;
+}
 
+
+/* c l a s s e s */
+
+.contenitore {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    /* se qualcosa dovesse uscire da un div, mi nasconde la scrollbar, fondamentale per la responsiveness */
+}
+
+
+
+.botton-1 {
+    height: 38px;
+    background-color: #015249;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.botton-1:hover{
+    background-color:#01352B;
+
+}
+
+
+.error{
+    color: #900000;
+    font-size: 5%;
+}
+
+.align{
+    text-justify: distribute;
+}
+
+
+/* i d   */
+
+#mapid {
+
+    height: 450px;
     min-height: 400px;
     text-align: center;
-}
-#map h2{
-
-    color: #015249;
-}
-
-.form{
-    display: block;
-    text-align: center;
-}
-form {
-
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    padding-bottom: 4px;
-}
-
-label{
-
-    display: inline-block;
-    float: left;
-    clear: left;
-    width: 250px;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-input{
-
-    display: inline-block;
-    float: left;
+    position: relative;
 }
 
 /*Social*/
@@ -152,7 +146,7 @@ input{
     background-color: #57bc90;
 }
 
-#social h2 {
+#social h1 {
 
     float: left;
 }
@@ -173,7 +167,6 @@ input{
 /*Scatole*/
 
 #scatole .box {
-
     float: left;
     width: 30%;
     text-align: center;
@@ -181,14 +174,42 @@ input{
 
 }
 
-/*Footer*/
 
-footer {
 
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
-    background-color: #015249;
-    text-align: center;
+#form-std {
+    height: 420px;
 }
 
+
+#panell {
+    position: absolute;
+    top: 25%;
+    right: 8%;
+    z-index: 1;
+    padding: 2%;
+    border: 2px solid #015249;
+    text-align: center;
+    line-height: 30px;
+    background-color:lightgoldenrodyellow;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 8%;
+}
+
+#title{
+    color: #015249;
+    font: 2vm / 1.5 Arial, Helvetica, san-serif;
+
+}
+
+#smaller {
+    font-size: smaller;
+}
+
+#plain {
+    all: initial;
+    color: mediumblue;
+}
+
+ a span:hover{
+    text-decoration: underline;
+}

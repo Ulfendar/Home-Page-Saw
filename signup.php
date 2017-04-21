@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -10,47 +10,58 @@
 </head>
 <body>
 
+
 <header>
     <div class="contenitore">
         <div id="logo"></div>
         <div id="titolo">
-            <a href="index.html"><h1><span class="highlight">Progetto:</span> HomePage</h1></a>
+            <h1><span  class="highlight"> <a href="index.php"> Progetto: HomePage </a></span></h1>
             <!--Utilizzo span al posto di div, per evitare di andare a capo-->
         </div>
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li class="current"><a href="signup.php">Sign-up </a></li>
+                <li></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<section id="map">
+
+<div align="center">
     <div class="contenitore">
-        <script>
-            function initMap() {
-                var uluru = {lat: 44.403157, lng: 8.972023};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 16,
-                    center: uluru
-                });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
-            }
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAScSWCI8cXmVM8Vyoy9veNNdj0WJYIe_I
-&callback=initMap">
-        </script>
-        <!--Script delle api di googlemaps-->
+
+        <form id="form-std" method="POST" action="created.php">
+
+            <p> <h1 id="title"> REGISTRATION </h1>
+
+            <label>Username</label><br>
+            <input type="text" size="20%" name="username" placeholder="" required>
+            <br><br>
+
+            <label>Email</label><br>
+            <input type="email" size="20%" name="email" placeholder="" required>
+            <br><br>
+
+            <label>Password</label><br>
+            <input type="password" size="20%" name ="pw" placeholder="" required>
+            <br><br>
+
+            <label>Re-type password</label><br>
+            <input type="password" size="20%" placeholder="" required><br><br>
+            <br><br>
+                <input type="submit" class="botton-1" name="submit_btt" value="Create Account" />
+            <br><br>
+
+        </form>
     </div>
-</section>
+</div>
+
+
 <section id="social">
     <div class="contenitore">
-        <h2>Seguici</h2>
+        <h1>Seguici</h1>
+
         <form>
             <input type="email" placeholder="Inserisci la tua mail per ">
             <button type="submit" class="botton-1">Invia</button>

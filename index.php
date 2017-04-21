@@ -1,3 +1,9 @@
+<?php
+if(isset($_COOKIE['new_cookie'])){
+    header("Location:memberarea.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -7,6 +13,9 @@
     <meta name="autori" content="Dovrebbe essere anonimo =P">
     <title>Tentative Hompage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+
 </head>
 <body>
 
@@ -14,39 +23,63 @@
     <div class="contenitore">
         <div id="logo"></div>
         <div id="titolo">
-            <a href="index.html"><h1><span class="highlight">Progetto:</span> HomePage</h1></a>
+            <h1><span class="highlight">Progetto:</span> HomePage</h1>
             <!--Utilizzo span al posto di div, per evitare di andare a capo-->
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li class="current"><a href="index.php">Home</a></li>
+                <li><a href="signup.php">Signup</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<section id="map">
-    <div class="contenitore">
-        <div class="form">
-            <h2>Login</h2>
-        <form>
-                <label>Nome Utente:</label><input title="Username" type="text">
-                <label>Password:</label><input title="Password" type = "text">
-        </form>
-    </div>
-    </div>
-</section>
+
+
+
+
+<div id="mapid">
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+    <!--S c r i p t   M A P P A  -->
+    <script>
+
+        var mymap = L.map('mapid').setView([44.40324, 8.97242], 13);
+
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mymap);
+
+
+    </script>
+
+
+
+</div>
+
+<!-- p a n e l -->
+
+<div id="panell">
+    <h4>SEGNALA IL TUO AVVISTAMENTO</h4>
+    Esegui il login e condividi<br>
+    con tutti la tua segnalazione!<br><br>
+    <a href="login.php"> <input class="botton-1" type="button" value="Segnala"></a>
+</div>
+
+
+
 <section id="social">
     <div class="contenitore">
         <h1>Seguici</h1>
-
         <form>
             <input type="email" placeholder="Inserisci la tua mail per ">
             <button type="submit" class="botton-1">Invia</button>
         </form>
     </div>
 </section>
+
+
 <section id="scatole">
     <div class="contenitore">
 
