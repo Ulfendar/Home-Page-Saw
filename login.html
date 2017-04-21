@@ -19,8 +19,8 @@
         </div>
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
@@ -28,29 +28,19 @@
 </header>
 <section id="map">
     <div class="contenitore">
-        <script>
-            function initMap() {
-                var uluru = {lat: 44.403157, lng: 8.972023};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 16,
-                    center: uluru
-                });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
-            }
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAScSWCI8cXmVM8Vyoy9veNNdj0WJYIe_I
-&callback=initMap">
-        </script>
-        <!--Script delle api di googlemaps-->
+        <div class="form">
+            <h2>Login</h2>
+        <form>
+                <label>Nome Utente:</label><input title="Username" type="text">
+                <label>Password:</label><input title="Password" type = "text">
+        </form>
+    </div>
     </div>
 </section>
 <section id="social">
     <div class="contenitore">
-        <h2>Seguici</h2>
+        <h1>Seguici</h1>
+
         <form>
             <input type="email" placeholder="Inserisci la tua mail per ">
             <button type="submit" class="botton-1">Invia</button>

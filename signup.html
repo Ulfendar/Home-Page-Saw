@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
     <div class="contenitore">
         <div id="logo"></div>
@@ -19,38 +18,32 @@
         </div>
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li class="current"><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <section id="map">
     <div class="contenitore">
-        <script>
-            function initMap() {
-                var uluru = {lat: 44.403157, lng: 8.972023};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 16,
-                    center: uluru
-                });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
-            }
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAScSWCI8cXmVM8Vyoy9veNNdj0WJYIe_I
-&callback=initMap">
-        </script>
-        <!--Script delle api di googlemaps-->
+        <div class="form">
+            <h2>Registrati</h2>
+            <form>
+                <label>Nome Utente:</label><input title="Username" type="text">
+                <label>E-mail:</label><input title="Email" type = "email">
+                <label>Password:</label><input title="Password" type = "text">
+                <label>Data di Nascita:</label><input title="Birthdate" type = "text">
+                <label>Nazionalità</label><input title="Nazione" type = "text">
+                <label>Comune:</label><input title="Città" type = "text">
+            </form>
+        </div>
     </div>
 </section>
 <section id="social">
     <div class="contenitore">
-        <h2>Seguici</h2>
+        <h1>Seguici</h1>
+
         <form>
             <input type="email" placeholder="Inserisci la tua mail per ">
             <button type="submit" class="botton-1">Invia</button>
