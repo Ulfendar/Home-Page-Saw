@@ -1,0 +1,232 @@
+/*Stili globale*/
+body {
+    font: 15px / 1.5 Arial, Helvetica, san-serif;
+    /* Formato compattato per indicare : dimensione font, spazio interlinea, fontfamily e eventuali secondari */
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    /*Mai sfondo bianco =P, mai*/
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: inline;
+}
+
+
+/*stili header*/
+
+header {
+
+    background: #57bc90;
+    /*colore bg*/
+    color: white;
+    /*colore font*/
+    padding-top: 30px;
+    min-height: 70px;
+    /*affinchè scali, ma non venga ridotto troppo*/
+    border-bottom: #015249 3px solid;
+    /* short format per indicare il colore e le dimensioni del bordo: colore, dimensioni, tipo */
+}
+
+
+header a {
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+
+header li {
+
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    /*in senso orario da sopra*/
+}
+
+header #logo {
+    float: left;
+    padding: 0 2% 0 2%;
+}
+
+
+
+
+header nav {
+
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight {
+
+    color: #015249;
+    font-weight: bold;
+    font-size: 30pt;
+
+}
+
+header .current a {
+
+    color: #015249;
+    font-weight: bold;
+
+}
+
+header a:hover {
+
+    font-weight: bold;
+    color: gray;
+}
+
+table{
+    width: 100%;
+}
+td {
+    border-spacing: 5px;
+    padding: 0 5% 0 0;
+    text-align: right;
+}
+/*Footer*/
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #015249;
+    text-align: center;
+}
+
+
+/* c l a s s e s */
+
+
+.contenitore {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    /* se qualcosa dovesse uscire da un div, mi nasconde la scrollbar, fondamentale per la responsiveness */
+}
+
+
+
+
+
+.botton-1 {
+    height: 38px;
+    background-color: #015249;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.botton-1:hover{
+    background-color:#01352B;
+
+}
+
+
+.error{
+    color: #900000;
+    font-size: 2em;
+}
+
+.align{
+    text-justify: distribute;
+}
+
+
+/* i d   */
+
+#mapid {
+
+    height: 450px;
+    min-height: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/*Social*/
+#social {
+
+    border-top: #015249 3px solid;
+    padding: 15px;
+    color: white;
+    background-color: #57bc90;
+}
+
+#social h1 {
+
+    float: left;
+}
+
+#social form {
+
+    float: right;
+    margin-top: 15px;
+}
+
+#social input[type="email"] {
+
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*Scatole*/
+
+#scatole .box {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+#form-std {
+    height: 420px;
+}
+
+
+#panell {
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    z-index: 1;
+    padding: 2%;
+    border: 2px solid #015249;
+    text-align: center;
+    line-height: 30px;
+    color: lightgoldenrodyellow;
+    background-color:#015249;
+    border-radius: 8%;
+}
+
+
+#title{
+    color: #015249;
+    font: 2em / 1.5 Arial, Helvetica, san-serif;
+
+}
+
+
+#plain {
+    all: initial;
+    color: dimgray;
+}
+
+ a span:hover{
+    text-decoration: underline;
+}
+
+
